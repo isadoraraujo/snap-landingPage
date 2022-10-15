@@ -15,5 +15,20 @@ export const Container = styled.div`
 export const ContainerText = styled.div`
     display: flex;
     flex-direction: column;
+    text-align: center;
+   
+
+    h1 {
+        font-family: Epilogue;
+        margin-top: 2rem;
+        font-weight: 700;
+    }
+
+    span {
+        color: ${props=>props.theme.colors["Medium-Gray"]};
+        width: 21rem;
+        line-height: 1.7rem;
+        margin-top: 1.4rem;
+    }
 
 `
