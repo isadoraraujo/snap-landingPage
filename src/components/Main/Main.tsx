@@ -1,5 +1,15 @@
-import { Container } from "./styles";
+import { Header } from "../Header";
+import { Container, ContainerText } from "./styles";
 
 export const Main = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+     
+      <img src="image-hero-mobile.png" alt="" />
+
+      <ContainerText>
+
+      </ContainerText>
+    </Container>
+  );
 };
