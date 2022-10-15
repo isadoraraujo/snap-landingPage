@@ -5,7 +5,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     img {
       max-width: 100%;
@@ -18,7 +17,6 @@ export const Container = styled.div`
     justify-content: space-between;
 
     width: 100%;
-    
 
     img {
       max-width: 100%;
@@ -43,7 +41,7 @@ export const ContainerText = styled.div`
     span {
       color: ${(props) => props.theme.colors["Medium-Gray"]};
       width: 21rem;
-      
+
       line-height: 1.7rem;
       margin-top: 1.4rem;
     }
@@ -57,50 +55,53 @@ export const ContainerText = styled.div`
       font-family: Epilogue;
       font-weight: 700;
       margin-top: 0.25rem;
-      
+
       font-size: 5rem;
       width: 33rem;
     }
 
     span {
-        width: 24rem;
+      width: 24rem;
     }
   }
 `;
 
 export const Button = styled.button`
-    width: 10.2rem;
-    padding: 1rem;
-    margin-top: 3rem;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
+  width: 10.2rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
 
-    background: ${props=>props.theme.colors["Almost-Black"]};
-    color:white;
-    font-weight: bold;
-    font-family: Epilogue;
-    font-size: 1rem;
-    transition: all ease 0.2s;
-    border: 1px solid ${props=>props.theme.colors["Almost-Black"]};
+  background: ${(props) => props.theme.colors["Almost-Black"]};
+  color: white;
+  font-weight: bold;
+  font-family: Epilogue;
+  font-size: 1rem;
+  transition: all ease 0.2s;
+  border: 1px solid ${(props) => props.theme.colors["Almost-Black"]};
 
-    &:hover {
-      background: white;
-   
-      color: ${props=>props.theme.colors["Almost-Black"]};
-    }
+  &:hover {
+    background: white;
+
+    color: ${(props) => props.theme.colors["Almost-Black"]};
+  }
 `;
-
 
 export const ContainerLogos = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 12rem;
+  justify-content: space-between;
 
-    display: flex;
-    align-items: center;
-
-    margin-top: 12rem;
-    gap: 2rem;
+ 
   
 
-
+  @media (min-width: 375px) {
+    img {
+      margin-top: -16rem;
+      width: 20%;
+    }
+  }
 `;
-
