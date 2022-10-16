@@ -61,6 +61,19 @@ export const NavRegister = styled.nav`
   }
 `;
 
+export const HeaderMobile = styled.header`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+`
+
+export const Trigger = styled(Dialog.Trigger)`
+ > figure > img {
+  width: 100%;
+}
+`
+
 export const Overlay = styled(Dialog.Overlay)`
   position: fixed;
   width: 100vw;
