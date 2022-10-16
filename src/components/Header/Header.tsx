@@ -8,9 +8,9 @@ import {
   NavRegister,
   NavRegisterModal,
   Overlay,
-  Trigger,
 } from "./styles";
 import * as Dialog from "@radix-ui/react-dialog";
+import { NavigationMenuContainer } from "../NavigationMenuContainer/NavigationMenu";
 
 export const Header = () => {
   const isWidthDesktop = window.screen.width;
@@ -23,8 +23,8 @@ export const Header = () => {
             <figure>
               <img src="logo.svg" alt="Logo" />
             </figure>
-            <a>Features</a>
-            <a>Company</a>
+            <NavigationMenuContainer />
+
             <a>Careers</a>
             <a>About</a>
           </NavLinks>
