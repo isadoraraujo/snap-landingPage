@@ -1,4 +1,4 @@
-import { HeaderContainer, NavLinks, NavRegister } from './styles'
+import { HeaderContainer, NavLinks, NavRegister } from "./styles";
 
 export const Header = () => {
     return (

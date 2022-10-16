@@ -9,6 +9,5 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: 'Epilogue', sans-serif;
-        font-size: 16px;
     }
 `
