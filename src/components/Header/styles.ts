@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as Dialog from '@radix-ui/react-dialog';
 
 export const HeaderContainer = styled.header`
   color: ${(props) => props.theme.colors["Medium-Gray"]};
@@ -59,3 +60,45 @@ export const NavRegister = styled.nav`
     cursor: pointer;
   }
 `;
+
+export const HeaderMobile = styled.header`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+`
+
+export const Trigger = styled(Dialog.Trigger)`
+ > figure > img {
+  width: 100%;
+}
+`
+
+export const Overlay = styled(Dialog.Overlay)`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+`;
+
+export const Content = styled(Dialog.Content)`
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  > button {
+    width: fit-content;
+  }
+`
+export const Close = styled(Dialog.Close)`
+  left: 100%;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+`
