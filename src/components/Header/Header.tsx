@@ -4,7 +4,6 @@ export const Header = () => {
     return (
         <HeaderContainer>
             <NavLinks>
-            <h1>I</h1>
             <figure>
                 <img src="logo.svg" alt="Logo" />
             </figure>
