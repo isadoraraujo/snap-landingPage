@@ -20,6 +20,7 @@ export const Header = () => {
       {isWidthDesktop >= 1024 ? (
         <>
           <NavLinks>
+            
             <figure>
               <img src="logo.svg" alt="Logo" />
             </figure>
