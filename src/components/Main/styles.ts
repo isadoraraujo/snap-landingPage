@@ -5,23 +5,33 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    img {
-      max-width: 100%;
-    }
+    border: 1px solid blue;
   }
 
   @media (min-width: 1440px) {
     flex-direction: row-reverse;
-    padding: 0rem 12rem;
+    padding: 0rem 4rem;
     justify-content: space-between;
 
     width: 100%;
 
-    img {
+    > img {
       max-width: 100%;
       max-height: 36rem;
     }
+  }
+`;
+
+export const ImageContainer = styled.div`
+  @media (min-width: 1440px) {
+    > img {
+      height: 40rem;
+    }
+  }
+
+  > img {
+    max-height: 100%;
+    max-width: 100%;
   }
 `;
 
@@ -46,6 +56,7 @@ export const ContainerText = styled.div`
   }
 
   @media (min-width: 1440px) {
+    margin-top: 4rem;
     text-align: left;
     align-items: flex-start;
 
@@ -82,8 +93,11 @@ export const Button = styled.button`
 
   &:hover {
     background: white;
-
     color: ${(props) => props.theme.colors["Almost-Black"]};
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 6rem;
   }
 `;
 
@@ -91,7 +105,6 @@ export const ContainerLogos = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 
   @media (min-width: 375px) {
     img {

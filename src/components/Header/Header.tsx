@@ -1,19 +1,26 @@
-import { HeaderContainer } from "./styles"
-
+import { HeaderContainer, NavLinks, NavRegister } from "./styles";
 
 export const Header = () => {
-    return (
-        <HeaderContainer>
-            <nav>
-                <a>Features</a>
-                <a>Comapany</a>
-                <a>Careers</a>
-                <a>About</a>
-            </nav>
-            <nav>
-                <a>Login</a>
-                <button><a>Register</a></button>
-            </nav>
-        </HeaderContainer>
-    )
-}
+  return (
+    <HeaderContainer>
+      <NavLinks>
+        <figure>
+          <img src="logo.svg" alt="Logo" />
+        </figure>
+        <a>Features</a>
+
+        <a>Company</a>
+        <a>Careers</a>
+        <a>About</a>
+      </NavLinks>
+      <NavLinks />
+
+      <NavRegister>
+        <a>Login</a>
+        <button>
+          <a>Register</a>
+        </button>
+      </NavRegister>
+    </HeaderContainer>
+  );
+};
