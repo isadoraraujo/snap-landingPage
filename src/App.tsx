@@ -18,7 +18,6 @@ function App() {
 =======
 <<<<<<< HEAD
       <Main/>
-=======
       <Header />
 >>>>>>> 700b975a734ea5a648fde6ceae2a733dbf4fae7d
 >>>>>>> main
