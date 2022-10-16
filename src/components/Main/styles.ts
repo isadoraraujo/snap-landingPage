@@ -26,25 +26,23 @@ export const Container = styled.div`
 `;
 
 export const ContainerText = styled.div`
+  h1 {
+    font-family: Epilogue;
+    margin-top: 2rem;
+    font-weight: 700;
+  }
+  span {
+    color: ${(props) => props.theme.colors["Medium-Gray"]};
+    width: 21rem;
+
+    line-height: 1.7rem;
+    margin-top: 1.4rem;
+  }
   @media (min-width: 375px) {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-
-    h1 {
-      font-family: Epilogue;
-      margin-top: 2rem;
-      font-weight: 700;
-    }
-
-    span {
-      color: ${(props) => props.theme.colors["Medium-Gray"]};
-      width: 21rem;
-
-      line-height: 1.7rem;
-      margin-top: 1.4rem;
-    }
   }
 
   @media (min-width: 1440px) {
@@ -92,15 +90,12 @@ export const Button = styled.button`
 export const ContainerLogos = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 12rem;
   justify-content: space-between;
 
- 
-  
 
   @media (min-width: 375px) {
     img {
-      margin-top: -16rem;
+      margin-top: 3.75rem;
       width: 20%;
     }
   }

@@ -15,6 +15,7 @@ export const Main = () => {
           <strong>
             Make remote work
           </strong>
+          
         </h1>
         <span>
           Get your team in sync, no matter your location. Streamline processes,
