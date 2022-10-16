@@ -1,3 +1,4 @@
+import  { useState } from 'react';
 import * as Dialog from "@radix-ui/react-dialog";
 import {
   Close,
@@ -7,7 +8,19 @@ import {
   Overlay,
 } from "./styles";
 
+
 export function Modal() {
+  const [isDownFeature, setIsDownFeature] = useState(true)
+  const [isDownCompany, setIsDownCompany] = useState(true)
+
+  function handleClick(id:string) {
+    if(id === 'Feature') {
+      setIsDownFeature(!isDownFeature)
+    } else {
+      setIsDownCompany(!isDownCompany)
+    }
+  }
+
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
@@ -20,11 +33,11 @@ export function Modal() {
             <img src="icon-close-menu.svg" />
           </Close>
           <ContainerTextModal>
-            <a>
-              <p>Features</p> <img src="icon-arrow-down.svg" alt="" />
+            <a onClick={() => handleClick('Feature')}>
+              <p>Features</p> <img src={isDownFeature ? 'icon-arrow-down.svg' : 'icon-arrow-up.svg'} />
             </a>
-            <a>
-              <p>Company</p> <img src="icon-arrow-down.svg" alt="" />
+            <a onClick={() => handleClick('Company')}>
+              <p>Company</p> <img src={isDownCompany ? 'icon-arrow-down.svg' : 'icon-arrow-up.svg'} />
             </a>
             <a>Careers</a>
             <a>About</a>

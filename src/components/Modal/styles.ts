@@ -36,9 +36,10 @@ export const ContainerTextModal = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2rem;
-
+  margin-top: 2rem; 
+  
   > a {
+    color: ${(props) => props.theme.colors["Medium-Gray"]};
     display: flex;
     align-items: center;
     gap: 0.4rem;

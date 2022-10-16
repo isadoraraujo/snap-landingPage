@@ -1,13 +1,33 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { MenuContent, MenuList, MenuRoot, MenuTrigger } from "./styles";
+import  { useState } from 'react';
 
 export function NavigationMenuContainer() {
+  const [isDownFeature, setIsDownFeature] = useState(true)
+  const [isDownCompany, setIsDownCompany] = useState(true)
+
+  function handleOver(id:string) {
+    if(id === 'Feature') {
+      setIsDownFeature(!isDownFeature)
+    } else {
+      setIsDownCompany(!isDownCompany)
+    }
+  }
+
+  function handleOut(id:string) {
+    if(id === 'Feature') {
+      setIsDownFeature(!isDownFeature)
+    } else {
+      setIsDownCompany(!isDownCompany)
+    }
+  }
+
   return (
     <MenuRoot>
       <MenuList>
         <NavigationMenu.Item>
-          <MenuTrigger>
-            <p>Features</p> <img src="icon-arrow-down.svg" alt="" />
+          <MenuTrigger onMouseOut={() => handleOut('Feature')} onMouseOver={() => handleOver('Feature')}>
+            <p>Features</p> <img src={isDownFeature ? 'icon-arrow-down.svg' : 'icon-arrow-up.svg'} />
           </MenuTrigger>
           <MenuContent>
             <ul className="Feature">
@@ -28,8 +48,8 @@ export function NavigationMenuContainer() {
           </MenuContent>
         </NavigationMenu.Item>
         <NavigationMenu.Item>
-          <MenuTrigger>
-            <p>Company</p> <img src="icon-arrow-down.svg" alt="" />
+          <MenuTrigger onMouseOut={() => handleOut('Company')} onMouseOver={() => handleOver('Company')}>
+            <p>Company</p> <img src={isDownCompany ? 'icon-arrow-down.svg' : 'icon-arrow-up.svg'}/>
           </MenuTrigger>
           <MenuContent>
             <ul className="Company">
