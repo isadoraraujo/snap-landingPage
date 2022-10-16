@@ -1,9 +1,5 @@
-<<<<<<< HEAD
+import { HeaderContainer } from "./styles"
 
-import { HeaderContainer } from './styles'
-=======
-import { HeaderContainer, NavLinks, NavRegister } from './styles'
->>>>>>> main
 
 export const Header = () => {
     return (
