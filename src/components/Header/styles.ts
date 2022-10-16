@@ -20,6 +20,10 @@ export const NavLinks = styled.nav`
     cursor: pointer;
   }
 
+  a:hover {
+    color: #111;
+  }
+
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;
