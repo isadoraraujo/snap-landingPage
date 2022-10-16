@@ -21,7 +21,7 @@ export const NavLinks = styled.nav`
   }
 
   a:hover {
-    color: #111;
+    color: ${(props) => props.theme.colors["Almost-Black"]};
   }
 
   @media (min-width: 1024px) {
@@ -62,6 +62,10 @@ export const NavRegister = styled.nav`
 
   a {
     cursor: pointer;
+  }
+
+  a:hover {
+    color: ${(props) => props.theme.colors["Almost-Black"]};
   }
 `;
 
