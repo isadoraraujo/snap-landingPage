@@ -4,6 +4,7 @@ import { HeaderContainer } from './styles'
 export const Header = () => {
     return (
         <HeaderContainer>
+            <h1>Exemplo</h1>
             <nav>
                 <a>Features</a>
                 <a>Comapany</a>
