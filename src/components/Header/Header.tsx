@@ -1,4 +1,3 @@
-import React from 'react'
 import { HeaderContainer, NavLinks, NavRegister } from './styles'
 
 export const Header = () => {
