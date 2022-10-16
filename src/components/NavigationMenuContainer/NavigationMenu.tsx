@@ -10,7 +10,7 @@ export function NavigationMenuContainer() {
             Features <img src="icon-arrow-down.svg" alt="" />
           </MenuTrigger>
           <MenuContent>
-            <ul>
+            <ul className="Feature">
               <li>
                 <img src="icon-todo.svg" alt="" /> <p>Todo List</p>
               </li>
@@ -32,7 +32,7 @@ export function NavigationMenuContainer() {
             Company <img src="icon-arrow-down.svg" alt="" />
           </MenuTrigger>
           <MenuContent>
-            <ul>
+            <ul className="Company">
               <li>History</li>
               <li>Our Team</li>
               <li>Blog</li>
