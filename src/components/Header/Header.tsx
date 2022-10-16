@@ -1,20 +1,21 @@
-import React from 'react'
-import { HeaderContainer } from './styles'
+import { HeaderContainer, NavLinks, NavRegister } from './styles'
 
 export const Header = () => {
     return (
         <HeaderContainer>
-            <h1>Exemplo</h1>
-            <nav>
+            <NavLinks>
+            <figure>
+                <img src="logo.svg" alt="Logo" />
+            </figure>
                 <a>Features</a>
-                <a>Comapany</a>
+                <a>Company</a>
                 <a>Careers</a>
                 <a>About</a>
-            </nav>
-            <nav>
+            </NavLinks>
+            <NavRegister>
                 <a>Login</a>
                 <button><a>Register</a></button>
-            </nav>
+            </NavRegister>
         </HeaderContainer>
     )
 }
