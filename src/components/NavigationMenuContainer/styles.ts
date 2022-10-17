@@ -9,7 +9,7 @@ export const MenuRoot = styled(NavigationMenu.Root)`
 
 export const MenuList = styled(NavigationMenu.List)`
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   width: 12rem;
   text-decoration: none;
   list-style: none;

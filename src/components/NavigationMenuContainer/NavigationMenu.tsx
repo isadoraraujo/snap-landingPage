@@ -8,17 +8,17 @@ export function NavigationMenuContainer() {
 
   function handleOver(id:string) {
     if(id === 'Feature') {
-      setIsDownFeature(!isDownFeature)
+      setIsDownFeature(false)
     } else {
-      setIsDownCompany(!isDownCompany)
+      setIsDownCompany(false)
     }
   }
 
   function handleOut(id:string) {
     if(id === 'Feature') {
-      setIsDownFeature(!isDownFeature)
+      setIsDownFeature(true)
     } else {
-      setIsDownCompany(!isDownCompany)
+      setIsDownCompany(true)
     }
   }
 
@@ -26,7 +26,7 @@ export function NavigationMenuContainer() {
     <MenuRoot>
       <MenuList>
         <NavigationMenu.Item>
-          <MenuTrigger onMouseOut={() => handleOut('Feature')} onMouseOver={() => handleOver('Feature')}>
+          <MenuTrigger onMouseOut={() => handleOut('Feature')} onMouseOver={() => handleOver('Feature')}  >
             <p>Features</p> <img src={isDownFeature ? 'icon-arrow-down.svg' : 'icon-arrow-up.svg'} />
           </MenuTrigger>
           <MenuContent>

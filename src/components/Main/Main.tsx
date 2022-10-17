@@ -8,18 +8,16 @@ import {
 } from "./styles";
 
 export const Main = () => {
-  const isWidthDesktop = window.screen.width;
 
   return (
     <>
       <Header />
       <Container>
-        <ImageContainer>
-          {isWidthDesktop >= 1440 ? (
-            <img src="image-hero-desktop.png" />
-          ) : (
-            <img src="image-hero-mobile.png" alt="" />
-          )}
+        <ImageContainer className="Desktop">
+          <img src="image-hero-desktop.png" />
+        </ImageContainer>
+        <ImageContainer className="Mobile">
+          <img src="image-hero-mobile.png" alt="" />
         </ImageContainer>
         <ContainerText>
           <h1>

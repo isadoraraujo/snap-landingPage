@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 import * as Dialog from "@radix-ui/react-dialog";
 
@@ -6,17 +7,26 @@ export const HeaderContainer = styled.header`
 
   width: 100%;
   margin-top: 1%;
-  @media (min-width: 375px) {
+  @media (max-width: 1020px) {
+   .Desktop {
+      display: none;
+   }
   }
+
+
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    .Mobile{
+      display: none;
+    }
   }
 `;
 export const NavLinks = styled.nav`
- 
+
 
   a {
     cursor: pointer;
@@ -29,9 +39,9 @@ export const NavLinks = styled.nav`
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap:2rem;
     align-items: center;
-    width: 40%;
+    width: 70%;
     margin-left: 3%;
     padding: 1rem;
     height: 6rem;
@@ -42,6 +52,7 @@ export const NavLinks = styled.nav`
   }
 `;
 export const NavRegister = styled.nav`
+
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;

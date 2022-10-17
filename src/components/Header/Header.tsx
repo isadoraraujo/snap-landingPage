@@ -4,35 +4,33 @@ import { NavigationMenuContainer } from "../NavigationMenuContainer/NavigationMe
 import { Modal } from "../Modal/Modal";
 
 export const Header = () => {
-    const isWidthDesktop = window.screen.width;
+  const isWidthDesktop = window.screen.width;
 
   return (
     <HeaderContainer>
-      {isWidthDesktop >= 1024 ? (
-        <>
-          <NavLinks>
-            <figure>
-              <img src="logo.svg" alt="Logo" />
-            </figure>
-            <NavigationMenuContainer />
-            <a>Careers</a>
-            <a>About</a>
-          </NavLinks>
-          <NavRegister>
-            <a>Login</a>
-            <button>
-              <a>Register</a>
-            </button>
-          </NavRegister>
-        </>
-      ) : (
-        <HeaderMobile>
+      <>
+        <NavLinks className="Desktop">
           <figure>
             <img src="logo.svg" alt="Logo" />
           </figure>
-          <Modal />
-        </HeaderMobile>
-      )}
+          <NavigationMenuContainer />
+          <a>Careers</a>
+          <a>About</a>
+        </NavLinks>
+        <NavRegister className="Desktop">
+          <a>Login</a>
+          <button>
+            <a>Register</a>
+          </button>
+        </NavRegister>
+      </>
+
+      <HeaderMobile className="Mobile">
+        <figure>
+          <img src="logo.svg" alt="Logo" />
+        </figure>
+        <Modal />
+      </HeaderMobile>
     </HeaderContainer>
   );
 };

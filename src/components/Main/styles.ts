@@ -5,14 +5,36 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+  }
+
+  @media (max-width: 1020px) {
+   .Desktop {
+      display: none;
+   }
+  }
+
+  @media (min-width: 1024px) {
+    .Mobile{
+      display: none;
+    }
+    .Desktop {
+      img {
+        max-height: 50rem;
+      }
+    }
   }
 
   @media (min-width: 1440px) {
     flex-direction: row-reverse;
     padding: 0rem 4rem;
     justify-content: space-between;
-
     width: 100%;
+    
+    .Mobile{
+      display: none;
+    }
+   
 
     > img {
       max-width: 100%;
@@ -35,6 +57,8 @@ export const ImageContainer = styled.div`
 `;
 
 export const ContainerText = styled.div`
+
+
   h1 {
     font-family: Epilogue;
     margin-top: 2rem;
@@ -54,6 +78,7 @@ export const ContainerText = styled.div`
     align-items: center;
   }
 
+ 
   @media (min-width: 1440px) {
     margin-top: 4rem;
     text-align: left;

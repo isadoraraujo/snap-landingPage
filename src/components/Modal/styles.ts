@@ -36,9 +36,10 @@ export const ContainerTextModal = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2rem; 
-  
-  > a {
+  margin-top: 2rem;
+  color: ${(props) => props.theme.colors["Medium-Gray"]};
+
+  > div > a {
     color: ${(props) => props.theme.colors["Medium-Gray"]};
     display: flex;
     align-items: center;
@@ -70,4 +71,39 @@ export const NavRegisterModal = styled.div`
     font-size: 16px;
     cursor: pointer;
   }
+`;
+
+export const ContainerMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    > li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+    }
+  }
+
+  .FeatureHidden {
+    display: none;
+  }
+  .FeatureShow {
+    display: flex;
+  }
+
+  .CompanyHidden {
+    display: none;
+  }
+
+  .CompanyShow {
+    display: flex;
+  }
+  
 `;
