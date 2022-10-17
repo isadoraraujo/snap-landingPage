@@ -5,17 +5,16 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-   
   }
 
   @media (max-width: 1020px) {
-   .Desktop {
+    .Desktop {
       display: none;
-   }
+    }
   }
 
   @media (min-width: 1024px) {
-    .Mobile{
+    .Mobile {
       display: none;
     }
     .Desktop {
@@ -30,11 +29,10 @@ export const Container = styled.div`
     padding: 0rem 4rem;
     justify-content: space-between;
     width: 100%;
-    
-    .Mobile{
+
+    .Mobile {
       display: none;
     }
-   
 
     > img {
       max-width: 100%;
@@ -59,6 +57,20 @@ export const ImageContainer = styled.div`
 export const ContainerText = styled.div`
 
 
+  @media (max-width: 370px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+
+    span {
+      font-size: 1rem;
+      padding: 1rem;
+      line-height: 1rem;
+    }
+  }
+
   h1 {
     font-family: Epilogue;
     margin-top: 2rem;
@@ -78,7 +90,6 @@ export const ContainerText = styled.div`
     align-items: center;
   }
 
- 
   @media (min-width: 1440px) {
     margin-top: 4rem;
     text-align: left;
@@ -129,9 +140,18 @@ export const ContainerLogos = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  
+  
+  
 
-  @media (min-width: 375px) {
-    img {
+  @media (max-width: 375px) {
+    max-width: 20rem;
+    margin-top: 1rem;
+    gap: 0.1rem;
+    > img {
       margin-top: 3.75rem;
       width: 20%;
     }
