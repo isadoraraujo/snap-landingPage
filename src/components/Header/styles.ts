@@ -87,6 +87,12 @@ export const HeaderMobile = styled.header`
   flex-direction: row;
   justify-content: space-between;
   margin: 5%;
+
+
+  > img {
+    cursor: pointer;
+  }
+
 `
 
 export const Trigger = styled(Dialog.Trigger)`

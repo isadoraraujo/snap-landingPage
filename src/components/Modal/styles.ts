@@ -44,7 +44,13 @@ export const ContainerTextModal = styled.div`
     display: flex;
     align-items: center;
     gap: 0.4rem;
+
+    > p {
+      cursor: pointer;
+    }
   }
+
+  
 `;
 
 export const NavRegisterModal = styled.div`
@@ -76,8 +82,8 @@ export const NavRegisterModal = styled.div`
 export const ContainerMenu = styled.div`
   display: flex;
   flex-direction: column;
-
-
+ 
+ 
   > ul {
     display: flex;
     flex-direction: column;
